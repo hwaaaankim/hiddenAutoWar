@@ -101,17 +101,6 @@ public class APIController {
 	    return ResponseEntity.ok(result);
 	}
 	
-    @PostMapping("/marbleLowExcelUpload")
-    public ResponseEntity<String> marbleLowExcelUpload(@RequestParam("file") MultipartFile file) {
-        try (InputStream inputStream = file.getInputStream()) {
-            marbleExcelService.uploadExcel(inputStream);
-            return ResponseEntity.ok("✅ 마블 하부장 엑셀 업로드 및 DB 저장 완료");
-        } catch (Exception e) {
-            e.printStackTrace();
-            return ResponseEntity.status(500).body("❌ 업로드 실패: " + e.getMessage());
-        }
-    }
-	
     @PostMapping("/topExcelUpload")
     public ResponseEntity<Map<String, Object>> uploadTopExcel(@RequestParam("file") MultipartFile file) {
         Map<String, Object> result = new HashMap<>();
@@ -125,6 +114,17 @@ public class APIController {
         }
 
         return ResponseEntity.ok(result);
+    }
+    
+    @PostMapping("/marbleLowExcelUpload")
+    public ResponseEntity<String> marbleLowExcelUpload(@RequestParam("file") MultipartFile file) {
+        try (InputStream inputStream = file.getInputStream()) {
+            marbleExcelService.uploadExcel(inputStream);
+            return ResponseEntity.ok("✅ 마블 하부장 엑셀 업로드 및 DB 저장 완료");
+        } catch (Exception e) {
+            e.printStackTrace();
+            return ResponseEntity.status(500).body("❌ 업로드 실패: " + e.getMessage());
+        }
     }
     
 	@PostMapping("/lowExcelUpload")
