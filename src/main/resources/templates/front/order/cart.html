@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+
+<head th:replace="fragments/front/common :: autoHead">
+</head>
+
+<body class="theme-light" data-highlight="highlight-red" data-gradient="body-default">
+
+
+	<th:block th:replace="fragments/front/common :: autoLoader"></th:block>
+	<th:block th:replace="fragments/front/common :: autoFooterMenu"></th:block>
+
+	<div id="page" class="container">
+		<th:block th:replace="fragments/front/common :: autoHeaderMenu"></th:block>
+		<div class="page-content header-clear-medium">
+			<div class="card card-style preload-img" data-src="/front/images/pictures/18.jpg" data-card-height="130">
+				<div class="card-center ms-3">
+					<h1 class="color-white mb-0">장바구니</h1>
+					<p class="color-white mt-n1 mb-0">현재 발주를 진행중인 모든 제품을 확인할 수 있습니다.</p>
+				</div>
+				<div class="card-center me-3">
+					<a href="/index" data-back-button
+						class="btn btn-m float-end rounded-xl shadow-xl text-uppercase font-800 bg-highlight">홈</a>
+				</div>
+				<div class="card-overlay bg-black opacity-80"></div>
+			</div>
+			<div id="cart-container">
+				<div id="product-container"></div> <!-- 장바구니 제품 정보 렌더링 -->
+				<div class="card card-style">
+					<div class="content">
+						<a href="/orderConfirm" class="btn btn-full btn-m text-uppercase font-800 rounded-sm">발주하기</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<th:block th:replace="fragments/front/common :: autoBottomMenu"></th:block>
+	</div>
+	<th:block th:replace="fragments/front/common :: autoSideBar"></th:block>
+	<th:block th:replace="fragments/front/common :: autoScript"></th:block>
+</body>
+
+</html>

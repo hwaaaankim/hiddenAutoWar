@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+
+<head th:replace="fragments/front/common :: autoHead">
+</head>
+
+<body class="theme-light" data-highlight="highlight-red" data-gradient="body-default">
+
+
+	<th:block th:replace="fragments/front/common :: autoLoader"></th:block>
+	<th:block th:replace="fragments/front/common :: autoFooterMenu"></th:block>
+
+	<div id="page" class="container">
+		<th:block th:replace="fragments/front/common :: autoHeaderMenu"></th:block>
+		<div class="page-content header-clear-medium">
+			<div class="card card-style" style="border-radius: 0px !important;">
+				<div class="chat-container" id="chat-container">
+					<div class="chat-box" id="chat-box">
+						<!-- 첫 번째 질문 영역 -->
+					</div>
+				</div>
+			</div>
+		</div>
+		<th:block th:replace="fragments/front/common :: autoBottomMenu"></th:block>
+	</div>
+	<div class="fixed-button star">
+		<a id="star-btn" class="notUsed"><i class="fa-regular fa-star"></i></a>
+	</div>
+	<div class="fixed-button drawing">
+		<a target="_blank" id="modeling-btn" class="notUsed">3D</a>
+	</div>
+	<div class="fixed-button three-d">
+		<a target="_blank" id="three-d-btn" class="notUsed">도면</a>
+	</div>
+	<div id="order-overlay"></div>
+
+	<div id="loader-overlay" class="loader-overlay">
+		<div id="loader" class="loader">
+			<img src="/front/images/loader.gif" alt="Loading...">
+		</div>
+	</div>
+	<th:block th:replace="fragments/front/common :: autoSideBar"></th:block>
+	<th:block th:replace="fragments/front/common :: autoScript"></th:block>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+	<script src="https://code.jquery.com/jquery-3.7.1.min.js"
+		integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+	<script type="module" src="/front/noStandardRefactoring.js"></script>
+</body>
+
+</html>

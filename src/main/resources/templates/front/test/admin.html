@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Page</title>
+</head>
+<body>
+    <h1>Admin - Connected Users</h1>
+
+    <!-- 모든 사용자에게 메시지 전송 -->
+    <button onclick="sendToAllUsers('Hello to All')">모든 유저에게 메시지 보내기</button>
+
+    <!-- 게스트 사용자에게 메시지 전송 -->
+    <button onclick="sendToGuests('Hello to Guests')">게스트에게 메시지 보내기</button>
+
+    <!-- 특정 사용자에게 메시지 전송 -->
+    <button onclick="sendToMember('Hello to Member')">member에게 메시지 보내기</button>
+
+    <th:block th:replace="fragments/front/common :: autoScript"></th:block>
+</body>
+</html>

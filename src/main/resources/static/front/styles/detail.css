@@ -1,0 +1,1240 @@
+.mt-15 {
+	margin-top: 15px;
+}
+
+.process-text {
+	background-color: white;
+	color: gray;
+	right: 50px !important;
+
+}
+
+.process-text span {
+	color: black;
+	font-weight: 600;
+}
+
+.process-btn-wrap {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.process-btn-wrap a {
+	width: 200px;
+	margin-right: 5px;
+	font-size: 14px;
+}
+
+@media(max-width:760px) {
+	.process-btn-wrap {
+		display: block;
+	}
+
+	.process-btn-wrap a {
+		width: 100px;
+		font-size: 12px;
+		margin-bottom: 5px;
+	}
+}
+
+
+/* 달력 스타일 */
+#auto-calendar {
+	margin: 0px auto;
+}
+
+.fc-daygrid-day {
+	transition: background-color 0.3s ease;
+	cursor: pointer;
+}
+
+/* 날짜 hover 효과 추가 */
+.fc-daygrid-day:hover {
+	background-color: rgb(177, 219, 224, 0.7);
+}
+
+/* 달력 스타일 */
+#auto-calendar {
+	margin: 0px auto;
+}
+
+/* 이벤트 타이틀이 길 경우 줄임표 처리 */
+.fc-event-title {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	max-width: 100%;
+}
+
+/* 모달 스타일 */
+.auto-modal {
+	display: none;
+	position: fixed;
+	z-index: 999;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	/* 어두운 배경이 화면 전체에 적용 */
+
+}
+
+.auto-modal-content {
+	background-color: white;
+	margin: 10% auto;
+	padding: 20px;
+	position: relative;
+	border-radius: 10px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	width: 90%;
+	max-width: 600px;
+	font-family: Arial, sans-serif;
+}
+
+.auto-modal-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #ddd;
+}
+
+.auto-modal-body {
+	margin-top: 20px;
+	max-height: 400px;
+	overflow-y: auto;
+	font-size: 16px;
+	line-height: 1.5;
+}
+
+/* 개별 이벤트 항목 */
+.event-item {
+	margin-bottom: 15px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #eee;
+}
+
+.event-item p {
+	margin-bottom: 0px;
+	line-height: 1.4;
+}
+
+/* 닫기 버튼 */
+#auto-close {
+	position: absolute;
+	right: 10px;
+	top: 15px;
+	font-size: 30px;
+	font-weight: 600;
+	cursor: pointer;
+	color: #333;
+}
+
+#auto-close:hover {
+	color: red;
+}
+
+/* 모바일에서도 달력이 스크롤 없이 높이가 자동 조정되도록 */
+.fc-daygrid {
+	height: auto !important;
+}
+
+h3#auto-modal-title {
+	margin-bottom: 30px;
+}
+
+.sign {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.sign-wrap {
+	padding-top: 50px;
+	padding-bottom: 50px;
+	width: 100%;
+	max-width: 600px;
+	margin: 0 auto;
+}
+
+.memberList-wrap h2 {
+	font-weight: 600;
+	font-size: 16px;
+	margin-bottom: 10px;
+}
+
+.memberList-wrap p {
+	font-size: 14px;
+	color: black;
+	font-weight: 300;
+	margin-bottom: 0px;
+	margin-top: 0px;
+	line-height: 1.4;
+}
+
+.memberList-btn-wrap {
+	display: flex;
+	margin-top: 20px;
+}
+
+.memberList-btn-wrap a {
+	width: 100%;
+	transition: all 0.3s ease-in-out;
+}
+
+.memberList-btn-wrap a i {
+	margin-right: 5px;
+}
+
+.memberList-btn-wrap a.call-btn {
+	background-color: darkgreen !important;
+	color: white;
+}
+
+.memberList-btn-wrap a.call-btn:hover {
+	background-color: green;
+}
+
+.memberList-btn-wrap a.detail-btn {
+	background-color: rgb(0, 0, 128) !important;
+	color: white;
+}
+
+.memberList-btn-wrap a.detail-btn:hover {
+	background-color: rgb(0, 0, 128, 0.7) !important;
+}
+
+/* 제품주문페이지 */
+.chat-container {
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 20px;
+	border: 1px solid #ddd;
+	background-color: #f9f9f9;
+	height: 800px;
+	overflow-y: auto;
+	position: relative;
+}
+
+.chat-box {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 20px;
+}
+
+.chat-message {
+	display: flex;
+	align-items: center;
+	/* 수직 중앙 정렬 */
+	background-color: #e6e6e6;
+	padding: 10px;
+	border-radius: 10px;
+	margin-bottom: 10px;
+	max-width: 70%;
+}
+
+.chat-question {
+	background-color: #f1f1f1;
+	text-align: left;
+	align-self: flex-start;
+}
+
+.chat-answer {
+	background-color: #4CAF50;
+	color: white;
+	text-align: right;
+}
+
+.right-box {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.chat-options {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+}
+
+button.option {
+	background-color: #4CAF50;
+	color: white;
+	padding: 10px;
+	cursor: pointer;
+	text-align: center;
+	border: none;
+	animation: slideInFromLeft 0.5s ease-in-out;
+	/* 기본 왼쪽에서 등장하는 애니메이션 */
+}
+
+button.option.right {
+	animation: slideInFromRight 0.5s ease-in-out;
+	/* 오른쪽에서 등장하는 버튼 */
+}
+
+button.option:disabled {
+	background-color: #ccc;
+	cursor: not-allowed;
+}
+
+button.option:hover:not(:disabled) {
+	background-color: #45a049;
+}
+
+@keyframes slideInFromLeft {
+	0% {
+		transform: translateX(-100%);
+		opacity: 0;
+	}
+
+	100% {
+		transform: translateX(0);
+		opacity: 1;
+	}
+}
+
+@keyframes slideInFromRight {
+	0% {
+		transform: translateX(100%);
+		opacity: 0;
+	}
+
+	100% {
+		transform: translateX(0);
+		opacity: 1;
+	}
+}
+
+#selected-items {
+	padding: 10px;
+	border-radius: 0px;
+	margin-bottom: 0px;
+}
+
+/* 애니메이션 */
+@keyframes slideInFromRight {
+	0% {
+		transform: translateX(100%);
+		opacity: 0;
+	}
+
+	100% {
+		transform: translateX(0);
+		opacity: 1;
+	}
+}
+
+@keyframes slideOutToLeft {
+	0% {
+		transform: translateX(0);
+		opacity: 1;
+	}
+
+	100% {
+		transform: translateX(-100%);
+		opacity: 0;
+	}
+}
+
+#selected-items h3 {
+	font-size: 16px;
+}
+
+.chat-box-item {
+	margin-bottom: 10px;
+}
+
+/* 버튼 스타일 */
+.back-button {
+	background: none;
+	border: none;
+	cursor: pointer;
+	font-size: 1.5em;
+	color: #333;
+}
+
+/* final-step 전체 디자인 */
+div.chat-message.chat-question.final-step {
+	width: 100%;
+	max-width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 10px;
+	background-color: #f9f9f9;
+	margin-bottom: 10px;
+	flex-wrap: nowrap;
+	margin-top: 30px;
+	/* 줄바꿈 방지 */
+}
+
+/* 선택이 완료되었습니다 텍스트 */
+div.chat-message.chat-question.final-step span {
+	font-size: 16px;
+	font-weight: bold;
+	color: #333;
+	white-space: nowrap;
+	/* 줄바꿈 방지 */
+}
+
+/* 수량 입력 필드 및 버튼들을 오른쪽 정렬 */
+div.chat-message.chat-question.final-step .right-side {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	gap: 10px;
+	width: 100%;
+}
+
+/* 수량 입력 필드 및 레이블 */
+div.chat-message.chat-question.final-step .quantity-input-container {
+	display: flex;
+	align-items: center;
+}
+
+div.chat-message.chat-question.final-step .quantity-input-container label {
+	margin-right: 10px;
+	font-size: 14px;
+	color: #333;
+}
+
+div.chat-message.chat-question.final-step .quantity-input {
+	width: 60px;
+	padding: 5px;
+	border-radius: 4px;
+	border: 1px solid #ccc;
+	font-size: 14px;
+}
+
+/* 버튼 영역 */
+div.chat-message.chat-question.final-step .button-container {
+	display: flex;
+	gap: 10px;
+}
+
+/* 발주넣기 버튼 */
+div.chat-message.chat-question.final-step .final-button.order-button {
+	background-color: #4CAF50;
+	color: white;
+	border: none;
+	padding: 10px 20px;
+	border-radius: 4px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+}
+
+/* 장바구니 버튼 */
+div.chat-message.chat-question.final-step .final-button.cart-button {
+	background-color: #2196F3;
+	color: white;
+	border: none;
+	padding: 10px 20px;
+	border-radius: 4px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+}
+
+/* hover 효과 */
+div.chat-message.chat-question.final-step .final-button.order-button:hover {
+	background-color: #45a049;
+}
+
+div.chat-message.chat-question.final-step .final-button.cart-button:hover {
+	background-color: #1e88e5;
+}
+
+/* 반응형: 화면 너비가 630px 이하일 때 수량과 버튼들이 아래로 배치됨 */
+@media (max-width: 630px) {
+	div.chat-message.chat-question.final-step {
+		flex-wrap: wrap;
+		/* 줄바꿈 허용 */
+	}
+
+	div.chat-message.chat-question.final-step .right-side {
+		justify-content: flex-start;
+		width: 100%;
+		margin-top: 10px;
+	}
+}
+
+i#bag-icon.active {
+	color: darkred;
+}
+
+#cart-notification {
+	position: fixed;
+	top: 30px;
+	right: 20px;
+	width: 200px;
+	padding: 10px;
+	background-color: rgba(0, 0, 0, 0.8);
+	color: white;
+	text-align: center;
+	border-radius: 5px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	opacity: 0;
+	transition: opacity 0.3s ease;
+}
+
+/* fadeIn 효과 */
+.fadeIn {
+	opacity: 1 !important;
+}
+
+/* fadeOut 효과 */
+.fadeOut {
+	opacity: 0 !important;
+}
+
+.p-relative {
+	position: relative;
+}
+
+.cart-remove {
+	position: absolute;
+	bottom: 0;
+}
+
+.ml-3 {
+	margin-right: 30px;
+}
+
+.justify-space {
+	justify-content: space-between;
+}
+
+.vertical-center div {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.payment-check-container {
+	width: 100%;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+.payment-title {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 20px;
+}
+
+.payment-title h2 {
+	margin: 0;
+	font-size: 24px;
+	font-weight: bold;
+}
+
+.same-address {
+	display: flex;
+	align-items: center;
+}
+
+.same-address input[type="checkbox"] {
+	margin-right: 8px;
+}
+
+.payment-inputs {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+}
+
+.input-group {
+	display: flex;
+	align-items: center;
+}
+
+.input-group input[type="text"] {
+	flex: 1;
+	/* 남는 공간을 채우도록 */
+	padding: 10px;
+	font-size: 16px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	outline: none;
+}
+
+.input-group button {
+	margin-left: 10px;
+	padding: 10px 15px;
+	font-size: 16px;
+	background-color: #4CAF50;
+	color: white;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+}
+
+.input-group button:hover {
+	background-color: #45a049;
+}
+
+.input-wrapper {
+	display: flex;
+	align-items: center;
+	margin-left: 20px;
+	/* 버튼들과 input, 확인 버튼 사이 여백 */
+}
+
+.custom-input {
+	width: 100px;
+	height: 46px;
+	/* input 너비 */
+	border: 1px solid #ddd;
+}
+
+.confirm-button {
+	padding: 5px 10px;
+	background-color: #4CAF50;
+	border: none;
+	color: white;
+	cursor: pointer;
+	border-radius: 5px;
+	height: 38px;
+	/* 버튼들과 동일한 높이로 설정 */
+}
+
+.confirm-button:hover {
+	background-color: #45a049;
+}
+
+/* 비규격주문 */
+/* 공통 옵션 컨테이너 스타일 */
+.option-container {
+	position: relative;
+	/* 덮개를 위한 상대적 위치 */
+}
+
+/* 옵션 영역 덮개 스타일 */
+.disabled-option::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.3);
+	/* 반투명 덮개 */
+	pointer-events: all;
+	/* 클릭 차단 */
+	z-index: 1;
+}
+
+/* 채팅창 컨테이너 */
+#chat-box {
+	width: 100%;
+	background-color: #f5f5f5;
+	border-radius: 10px;
+	overflow-y: auto;
+	height: 800px;
+}
+
+/* wrap - 각 단계의 컨테이너 */
+.non-standard-wrap {
+	margin-bottom: 20px;
+}
+
+/* question - 왼쪽에 붙는 시스템 질문 스타일 */
+.non-standard-question {
+	background-color: #e0e0e0;
+	border-radius: 10px;
+	padding: 10px;
+	max-width: 70%;
+	text-align: left;
+	margin-bottom: 10px;
+	float: left;
+	clear: both;
+}
+
+/* option - 왼쪽에 나타나는 옵션 스타일 */
+.non-standard-option {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
+	margin-bottom: 20px;
+	float: left;
+	clear: both;
+	width: 100%;
+	position: relative;
+}
+
+/* answer - 사용자가 선택한 답변을 오른쪽에 붙임 */
+.non-standard-answer {
+	background-color: #d1e7dd;
+	border-radius: 10px;
+	padding: 10px;
+	max-width: 100%;
+	width: 100%;
+	text-align: right;
+	margin-bottom: 10px;
+	float: right;
+	clear: both;
+}
+
+.non-standard-answer .non-standard-btn {
+	margin-left: 20px;
+}
+
+/* 버튼 스타일 */
+.non-standard-btn {
+	background-color: transparent;
+	border: 1px solid #ddd;
+	color: black;
+	border-radius: 5px;
+	padding: 10px 20px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+}
+
+.non-standard-btn {
+	background-color: transparent;
+	border: 1px solid #ddd;
+	color: black;
+	border-radius: 5px;
+	padding: 10px 20px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+}
+
+.non-standard-btn:not(.non-answer-btn) {
+	max-width: calc(20% - 10px);
+	flex: 1 1 calc(20% - 10px);
+	align-items: center;
+}
+
+@media (max-width: 768px) {
+	.non-standard-btn:not(.non-answer-btn) {
+		max-width: calc(50% - 10px);
+		flex: 1 1 calc(50% - 10px);
+	}
+}
+
+.non-answer-btn {
+	border: 1px solid rgba(0, 0, 0, 0.3);
+	max-width: 100%;
+}
+
+.non-standard-btn.product-option-btn {
+	background-color: transparent;
+	border: 1px solid #ddd;
+	color: black;
+	max-width: calc(20% - 10px);
+	flex: 1 1 calc(20% - 10px);
+	align-items: center;
+	height: 80px;
+	line-height: 1.4;
+	display: flex;
+	padding: 10px 10px;
+}
+
+@media (max-width: 768px) {
+	.non-standard-btn:not(.non-answer-btn) {
+		max-width: calc(50% - 10px);
+		flex: 1 1 calc(50% - 10px);
+	}
+
+	.non-standard-btn.product-option-btn {
+		max-width: calc(50% - 10px);
+		flex: 1 1 calc(50% - 10px);
+	}
+
+	.non-standard-answer {
+		line-height: 1.3; 
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		flex-wrap: nowrap;
+		text-align: left;
+		gap: 10px;
+	}
+
+	.non-standard-answer::before {
+		content: '';
+		display: table;
+		flex-shrink: 0;
+	}
+
+	.non-standard-answer button {
+		flex-shrink: 0;
+		align-self: center;
+		white-space: nowrap;
+		margin-left: auto;
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+}
+
+.non-standard-btn.product-option-btn span {
+	width: 50%;
+	/* 텍스트 영역 너비 50% */
+	text-align: center;
+	/* 텍스트 가운데 정렬 */
+	font-size: 13px;
+	/* 텍스트 크기 */
+	font-weight: 600;
+	line-height: 1.2;
+	margin-left: 5px;
+	color: #333;
+	/* 텍스트 색상 */
+	display: flex;
+	align-items: center;
+	/* 세로 가운데 정렬 */
+	justify-content: center;
+	/* 가로 가운데 정렬 */
+}
+
+.non-standard-btn.product-option-btn img {
+	width: 50%;
+	/* 이미지 너비 50% */
+	height: 100%;
+	/* 이미지 높이 100% */
+	margin-right: 5px;
+	object-fit: cover;
+	/* 이미지 비율 유지 */
+	border-right: 1px solid #ddd;
+	/* 이미지와 텍스트 사이 구분선 */
+}
+
+.non-standard-btn:hover {
+	background-color: #0056b3;
+}
+
+.non-standard-btn:disabled {
+	background-color: #f0f0f0;
+	color: #aaa;
+	border: 1px solid #ccc;
+	cursor: not-allowed;
+	pointer-events: none;
+	/* hover 효과 차단 */
+	transition: none;
+	/* 애니메이션 제거 */
+}
+
+label {
+	height: 48px;
+}
+
+input[readonly] {
+	background-color: #f0f0f0;
+	/* 연한 회색 */
+	cursor: not-allowed;
+	/* 사용 불가능한 커서 표시 */
+	color: #888;
+	/* 글자 색도 흐리게 */
+	border: 1px solid #ccc;
+	/* 테두리 색 변경 */
+}
+
+/* input 스타일 */
+.non-standard-input {
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	margin-left: 5px;
+	width: 200px;
+	height: 100%;
+}
+
+#door-direction-input {
+	width: 300px;
+}
+
+#final-wrap.non-standard-answer {
+	width: 100%;
+	max-width: 100% !important;
+}
+
+/* textarea 스타일 */
+.non-standard-textarea {
+	width: 100%;
+	min-height: 100px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	padding: 10px;
+	resize: vertical;
+	/* 수직 방향으로만 크기 조절 */
+	font-family: inherit;
+	font-size: 1em;
+	color: #333;
+	background-color: #f9f9f9;
+	margin-bottom: 10px;
+	transition: border-color 0.3s ease;
+}
+
+.non-standard-textarea:focus {
+	border-color: #007bff;
+	outline: none;
+}
+
+/* input[type="file"] 스타일 */
+.non-standard-file-upload {
+	display: block;
+	width: 100%;
+	max-width: 100%;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	padding: 10px;
+	background-color: #e0e0e0;
+	color: #333;
+	font-family: inherit;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+	margin-bottom: 10px;
+}
+
+.non-standard-file-upload:hover {
+	background-color: #d0d0d0;
+}
+
+.non-standard-file-upload::file-selector-button {
+	background-color: #007bff;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	padding: 5px 15px;
+	cursor: pointer;
+	margin-right: 10px;
+	transition: background-color 0.3s ease;
+}
+
+.non-standard-file-upload::file-selector-button:hover {
+	background-color: #0056b3;
+}
+
+
+.disabled-option {
+	opacity: 0.5;
+	transition: opacity 0.5s ease-in-out;
+}
+
+.fadeOut {
+	opacity: 0;
+	transition: opacity 0.5s ease-in-out;
+	pointer-events: none;
+}
+
+.accordion-btn div.content {
+	margin: 0px;
+}
+
+div.content.task-content {
+	margin-left: 0px;
+	margin-right: 0px;
+}
+
+.task-content p {
+	margin-bottom: 0px;
+}
+
+#tab-group-1.content {
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+/* 오버레이 스타일 */
+#order-overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	/* 반투명한 검은색 */
+	z-index: 9999;
+	/* 모든 화면 요소 위에 표시되도록 */
+	opacity: 0;
+	transition: opacity 0.5s ease-in-out;
+	/* fadeIn/fadeOut 애니메이션 */
+	pointer-events: none;
+	/* 클릭 불가능 */
+}
+
+
+
+.loader-overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.5);
+	/* 반투명 뿌연 효과 */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	opacity: 0;
+	visibility: hidden;
+	transition: opacity 0.3s ease-in-out;
+	z-index: 9999;
+	/* 화면의 가장 위에 표시 */
+}
+
+/* 로더 스타일 */
+.loader img {
+	width: 100px;
+	height: 100px;
+	animation: spin 1s linear infinite;
+}
+
+/* 로더 GIF 회전 애니메이션 */
+@keyframes spin {
+	from {
+		transform: rotate(0deg);
+	}
+
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+/* 오버레이 표시 클래스 */
+.loader-overlay.show {
+	opacity: 1;
+	visibility: visible;
+}
+
+.fixed-button {
+	position: fixed;
+	width: 60px;
+	height: 60px;
+	background-color: #007bff;
+	color: white;
+	font-size: 18px;
+	font-weight: bold;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	transition: transform 0.3s, background-color 0.3s;
+}
+
+.fixed-button a {
+	color: white;
+	text-decoration: none;
+}
+
+/* 각 버튼 위치 설정 */
+.fixed-button.drawing {
+	right: 50px;
+	bottom: 170px;
+}
+
+.fixed-button.three-d {
+	right: 50px;
+	bottom: 100px;
+}
+
+.fixed-button.star {
+	right: 50px;
+	bottom: 240px;
+}
+
+/* 호버 효과 */
+.fixed-button a:hover {
+	transform: scale(1.1);
+	background-color: #0056b3;
+}
+
+/* 비활성화 상태 (notUsed 클래스) */
+.fixed-button a.notUsed {
+	color: white;
+	pointer-events: none;
+	/* 클릭 방지 */
+	opacity: 0.5;
+	/* 흐려짐 효과 */
+	cursor: not-allowed;
+}
+
+/* 비활성화 상태에서는 호버 효과 제거 */
+.fixed-button a.notUsed:hover {
+	transform: none;
+	background-color: #007bff;
+}
+
+.switch {
+	position: relative;
+	display: inline-block;
+	width: 34px;
+	height: 20px;
+}
+
+.switch input {
+	display: none;
+}
+
+.slider {
+	position: absolute;
+	cursor: pointer;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #ccc;
+	transition: 0.4s;
+	border-radius: 20px;
+}
+
+.slider:before {
+	position: absolute;
+	content: "";
+	height: 14px;
+	width: 14px;
+	left: 3px;
+	bottom: 3px;
+	background-color: white;
+	transition: 0.4s;
+	border-radius: 50%;
+}
+
+input:checked+.slider {
+	background-color: #4caf50;
+}
+
+input:checked+.slider:before {
+	transform: translateX(14px);
+}
+
+.hidden-section {
+	display: none;
+	height: 0;
+	overflow: hidden;
+	/* 내용 잘림 방지 */
+	transition: height 0.3s ease-in-out;
+	/* 부드러운 애니메이션 */
+	margin-top: 20px;
+}
+
+.input-style {
+	display: flex;
+	align-items: center;
+	border: 1px solid #ddd;
+	padding: 10px;
+	border-radius: 8px;
+	margin-bottom: 10px;
+	background-color: #f9f9f9;
+}
+
+.input-style input {
+	flex: 1;
+	border: none;
+	outline: none;
+	font-size: 14px;
+	background: transparent;
+	margin-right: 10px;
+}
+
+.input-style button {
+	white-space: nowrap;
+	padding: 8px 12px;
+	font-size: 14px;
+	border: none;
+	border-radius: 6px;
+	background-color: #4caf50;
+	color: white;
+	cursor: pointer;
+	transition: background-color 0.3s;
+}
+
+.input-style button:hover {
+	background-color: #45a049;
+}
+
+
+/* 카트 아이콘에 수량 표시 */
+#cart-product-amount {
+	position: absolute;
+	top: 3px;
+	/* 아이콘 위로 약간 이동 */
+	right: 3px;
+	/* 아이콘 오른쪽으로 약간 이동 */
+	background-color: black;
+	/* 검정색 배경 */
+	color: white;
+	/* 하얀 글씨 */
+	font-size: 12px;
+	/* 글씨 크기 조정 */
+	width: 16px;
+	/* 동그라미 크기 */
+	height: 16px;
+	/* 동그라미 크기 */
+	display: flex;
+	/* 내용 중앙 정렬 */
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	/* 동그라미 모양 */
+	font-weight: bold;
+	/* 글씨 강조 */
+	z-index: 10;
+	/* 다른 요소 위에 표시 */
+}
+
+/* 아이콘 그룹 스타일 조정 */
+#header-icon-4-group {
+	position: relative;
+	/* 자식 요소인 수량 배지 위치 기준 */
+}
+
+.address-container {
+	margin-left: auto;
+	/* 오른쪽 끝으로 이동 */
+	display: flex;
+	align-items: center;
+	/* 체크박스와 텍스트를 세로로 정렬 */
+	gap: 10px;
+	/* 텍스트와 체크박스 사이 간격 */
+}
+
+.switch-label {
+	display: flex;
+	align-items: center;
+	font-size: 14px;
+	color: #333;
+	gap: 8px;
+	/* 텍스트와 스위치 사이 간격 */
+}
+
+.final-message-container {
+	text-align: left;
+	padding-left: 5px;
+	margin-bottom: 10px;
+}
+
+.final-message-container .final-message-item {
+	text-align: left;
+	margin-bottom: 0px;
+	line-height: 1.2;
+	color: darkred;
+}
+
+
+/* 가격계산 영수증 디자인 */
+.receipt-style {
+	border: 1px dashed #888;
+	background-color: #fefefe;
+	padding: 15px;
+	margin-top: 20px;
+	border-radius: 8px;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+	font-size: 14px;
+	text-align: left;
+}
+
+.receipt-style h4 {
+	margin-bottom: 10px;
+	font-size: 16px;
+	color: #333;
+}
+
+.receipt-style p {
+	margin: 0px;
+	line-height: 1.4;
+}
