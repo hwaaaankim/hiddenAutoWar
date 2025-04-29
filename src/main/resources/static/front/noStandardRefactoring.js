@@ -1803,7 +1803,7 @@ function renderAnswer(step, product, categoryKey = '') {
 		quantityLabel.appendChild(quantityInput);
 
 		// ✅ 6. 장바구니 버튼
-		const cartButton = document.createElement('button');
+		/*const cartButton = document.createElement('button');
 		cartButton.id = 'cart-btn';
 		cartButton.innerText = '장바구니';
 		cartButton.classList.add('non-standard-btn', 'non-answer-btn');
@@ -1826,7 +1826,7 @@ function renderAnswer(step, product, categoryKey = '') {
 				addToOrder();
 			}
 		});
-		finalWrap.appendChild(orderButton);
+		finalWrap.appendChild(orderButton);*/
 
 		// ✅ 8. 가격계산 버튼
 		const calcButton = document.createElement('button');

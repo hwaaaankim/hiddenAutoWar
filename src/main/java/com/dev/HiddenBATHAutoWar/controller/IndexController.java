@@ -9,7 +9,7 @@ public class IndexController {
 	@GetMapping({"/index", "/", ""})
 	public String index() {
 		
-		return "front/index";
+		return "front/order/nonStandardOrderProduct";
 	}
 	
 	@GetMapping("/loginForm")
